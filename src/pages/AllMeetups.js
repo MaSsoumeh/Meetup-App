@@ -33,7 +33,7 @@ const allMeetups = [
 function AllMeetupsPage() {
   return (
     <section>
-      <h2 className={selector.heading}>All Places to visit</h2>
+      <h2 className={selector.heading}>All Places To Visit</h2>
       <MeetupList allMeetups={allMeetups} />
     </section>
   );
