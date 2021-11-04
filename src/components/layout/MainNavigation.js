@@ -3,7 +3,7 @@ import selector from "./MainNavigation.module.css";
 function MainNavigation() {
   return (
     <header className={selector.header}>
-      <h1 className={selector.title}>React Meetups</h1>
+      <h1 className={selector.title}> Meetups</h1>
       <nav>
         <ul>
           <li>
