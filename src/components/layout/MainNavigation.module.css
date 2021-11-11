@@ -1,9 +1,18 @@
 .header {
-  width: 100%;
+  /* width: 100%;
   height: 5rem;
   display: flex;
   align-items: center;
+  justify-content: space-between; */
+
+  display: flex;
+  position: fixed;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
   justify-content: space-between;
+  z-index: 200;
   background-color: #142643;
   padding: 0 10%;
 }
@@ -35,9 +44,14 @@
 }
 
 .badge {
-  background-color: #cc2062;
-  color: white;
-  border-radius: 12px;
-  padding: 0 1rem;
+  background-color: #ffcccb;
+  display: inline-block;
+  color: #142643;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50%;
   margin-left: 0.5rem;
 }

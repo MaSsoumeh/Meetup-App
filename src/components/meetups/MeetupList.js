@@ -1,4 +1,4 @@
-import MeetupItem from "./MeetupItem";
+import MeetupItem from './MeetupItem';
 function MeetupList(props) {
   return (
     <ul>
@@ -7,6 +7,7 @@ function MeetupList(props) {
         return (
           <MeetupItem
             key={id}
+            id={id}
             title={title}
             image={image}
             address={address}

@@ -31,7 +31,7 @@ function AllMeetupsPage() {
     );
   }
   return (
-    <section>
+    <section className={selector.section}>
       <h2 className={selector.heading}>All Meetups</h2>
       <MeetupList allMeetups={loadedData} />
     </section>

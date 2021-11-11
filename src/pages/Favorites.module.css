@@ -7,3 +7,8 @@
 .section h2 {
   color: #142643;
 }
+.heading {
+  text-align: center;
+  color: #142643;
+  margin-bottom: 0;
+}
