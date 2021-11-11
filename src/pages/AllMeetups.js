@@ -1,13 +1,13 @@
-import { useState, useEffect } from "react";
-import MeetupList from "../components/meetups/MeetupList";
-import selector from "./AllMeetups.module.css";
+import { useState, useEffect } from 'react';
+import MeetupList from '../components/meetups/MeetupList';
+import selector from './AllMeetups.module.css';
 
 function AllMeetupsPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [loadedData, setLoadedData] = useState([]);
   useEffect(() => {
     setIsLoading(true);
-    fetch("https://react-meetup-12e11-default-rtdb.firebaseio.com/meetups.json")
+    fetch('https://react-meetup-12e11-default-rtdb.firebaseio.com/meetups.json')
       .then((response) => response.json())
       .then((data) => {
         const allMeetups = [];
@@ -32,7 +32,7 @@ function AllMeetupsPage() {
   }
   return (
     <section>
-      <h2 className={selector.heading}>All Places To Visit</h2>
+      <h2 className={selector.heading}>All Meetups</h2>
       <MeetupList allMeetups={loadedData} />
     </section>
   );

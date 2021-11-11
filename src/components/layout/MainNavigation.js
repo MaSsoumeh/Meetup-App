@@ -1,19 +1,21 @@
-import { Link } from "react-router-dom";
-import selector from "./MainNavigation.module.css";
+import { Link } from 'react-router-dom';
+import selector from './MainNavigation.module.css';
 function MainNavigation() {
   return (
     <header className={selector.header}>
-      <h1 className={selector.title}> Meetups</h1>
+      <Link to='/'>
+        <h1 className={selector.title}> MeetLine</h1>
+      </Link>
       <nav>
         <ul>
           <li>
-            <Link to="/">All Meetups</Link>
+            <Link to='/'>All Meetups</Link>
           </li>
           <li>
-            <Link to="/new-meetup">Add New Meetup</Link>
+            <Link to='/new-meetup'>Add New</Link>
           </li>
           <li>
-            <Link to="/favorites">Favorites</Link>
+            <Link to='/favorites'>Favorites</Link>
           </li>
         </ul>
       </nav>
